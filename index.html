@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico" type="image/gif">
+    <script type="text/javascript" src="dist/js/vendor/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://use.fontawesome.com/afe208580e.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <title>Wikipedia Randomizer</title>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="page-header">
+        <span id="iconBorder">
+        <i class="fa fa-wikipedia-w fa-5x" aria-hidden="true"></i>
+            </span>
+        <h1 id="headerText">Wikipedia Randomizer</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" id="searchBox" placeholder="Search for article...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" id="searchButton" type="button">Go!</button>
+          <button class="btn btn-default" id="randomButton" type="button">Give me a random article!</button>
+      </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item" id="id1" ></li>
+            <li class="list-group-item"  id="id2" ></li>
+            <li class="list-group-item"  id="id3" ></li>
+        </ul>
+        <div id="iframeBox">
+            <iframe id="iframe" src="" WIDTH=1000px HEIGHT=900px scrolling="auto" frameBorder="0">
+                Browser not compatible
+            </iframe>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

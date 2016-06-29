@@ -1,0 +1,23 @@
+.page-header {
+    text-align: center;
+}
+
+#randomButton {
+    padding-left: 10px;
+}
+
+div#iframeBox {
+    padding: 30px;
+}
+
+#iframeBox {
+    display: none;
+}
+
+.list-group-item {
+    margin: 20px;
+}
+
+.list-group {
+    display: none;
+}
