@@ -27,9 +27,12 @@ $(document).ready(function () {
             success: function (data) {
                 console.log("The user entered in the box: " + searchString);
                 console.log(urlAPI);
-                $("#id1").html(data[1][0]);
-                $("#id2").html(data[2][0]);
-                $("#id3").html(data[3][0]);
+                for(var i = 0; i < data[1].length; i++) {
+                    //$("#id1").html(data[1][i]);
+                    //$("#id2").html(data[2][i]);
+                    //$("#id3").html(data[3][i]);
+                    $("#output").prepend("<li><a href= " + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>" )
+                }
             },
 
             error: function (errorMessage) {
@@ -41,8 +44,10 @@ $(document).ready(function () {
 
     //Click to get random article
     $("#randomButton").click(function () {
+        $("#output").hide();
         var randomArticleURL = "https://en.wikipedia.org/wiki/Special:Random";
         $("#iframeBox").show();
         $("#iframe").attr("src", randomArticleURL);
     });
 });
+

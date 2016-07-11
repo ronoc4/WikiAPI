@@ -21,3 +21,21 @@ div#iframeBox {
 .list-group {
     display: none;
 }
+
+#output {
+    padding: 20px;
+    list-style: none;
+}
+
+#output li a {
+    color: #0b0080;
+}
+
+ul#output {
+    border: 1px solid #cedff2;
+    background: #f5faff;
+}
+
+#articles {
+    padding: 25px;
+}
