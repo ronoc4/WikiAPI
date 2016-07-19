@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://use.fontawesome.com/afe208580e.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
     <title>Wikipedia Randomizer</title>
 
@@ -26,18 +27,16 @@
         <div class="col-lg-6">
             <div class="input-group">
                 <input type="text" class="form-control" id="searchBox" placeholder="Search for article...">
-      <span class="input-group-btn">
+                <span class="input-group-btn">
         <button class="btn btn-default" id="searchButton" type="button">Go!</button>
           <button class="btn btn-default" id="randomButton" type="button">Give me a random article!</button>
       </span>
             </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
     </div><!-- /.row -->
-    <div class="row">
-        <ul class="list-group">
-            <li class="list-group-item" id="id1" ></li>
-            <li class="list-group-item"  id="id2" ></li>
-            <li class="list-group-item"  id="id3" ></li>
+    <div class="row" id="articles" >
+        <ul class="list-group" id="output">
+
         </ul>
         <div id="iframeBox">
             <iframe id="iframe" src="" WIDTH=1000px HEIGHT=900px scrolling="auto" frameBorder="0">
